@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="🔒 Paramètres de sécurité"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Changer le mot de passe -->
+    <TextView
+        android:id="@+id/changerMotDePasse"
+        android:text="🔑 Changer le mot de passe"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Activer les alertes de connexion -->
+    <TextView
+        android:id="@+id/alerteConnexion"
+        android:text="🚨 Alerte de connexion inhabituelle"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Recevoir des alertes SMS -->
+    <TextView
+        android:id="@+id/alerteSMS"
+        android:text="📩 Recevoir des alertes par SMS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Recevoir des alertes Email -->
+    <TextView
+        android:id="@+id/alerteEmail"
+        android:text="📧 Recevoir des alertes par Email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="#1E1E1E"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+

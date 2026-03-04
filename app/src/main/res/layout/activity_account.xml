@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Profil -->
+        <TextView
+            android:id="@+id/monProfil"
+            android:text="👤 Mon profil"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Paiement -->
+        <TextView
+            android:id="@+id/moyenPaie"
+            android:text="💳 Moyens de paiement"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Commandes -->
+        <TextView
+            android:id="@+id/mesCommandes"
+            android:text="📦 Mes commandes"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Avis -->
+        <TextView
+            android:id="@+id/mesAvis"
+            android:text="🌟 Avis et évaluations"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Sécurité -->
+        <TextView
+            android:id="@+id/securite"
+            android:text="🔒 Sécurité"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Notifications -->
+        <TextView
+            android:id="@+id/notifications"
+            android:text="🔔 Notifications"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Reçus -->
+        <TextView
+            android:id="@+id/recus"
+            android:text="🧾 Reçus et factures"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Aide -->
+        <TextView
+            android:id="@+id/aide"
+            android:text="❓ Assistance / Aide"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Déconnexion -->
+        <TextView
+            android:id="@+id/seDeconnecter"
+            android:text="🚪 Se déconnecter"
+            android:textColor="#FF4444"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#1E1E1E"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

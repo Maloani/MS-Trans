@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- Carte -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- UI superposée -->
+    <LinearLayout
+        android:id="@+id/uiOverlay"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#CC121212">
+
+        <!-- Barre de recherche -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#1E1E1E">
+
+            <EditText
+                android:id="@+id/editDestination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Où allez-vous ?"
+                android:textColorHint="#AAAAAA"
+                android:textColor="#FFFFFF"
+                android:background="@null"
+                android:textSize="14sp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnLater"
+                android:text="Plus tard"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:backgroundTint="#333333"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Boutons avec icônes et fonds colorés -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <!-- Course -->
+            <LinearLayout
+                android:id="@+id/btnCourse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#00695C">
+                <ImageView
+                    android:src="@drawable/ic_car"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:text="Course"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Moto -->
+            <LinearLayout
+                android:id="@+id/btnMoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#B71C1C">
+                <ImageView
+                    android:src="@drawable/ic_motorcycle"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:text="Moto"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Taxi (ex Réserver) -->
+            <LinearLayout
+                android:id="@+id/btnTaxi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#4A148C">
+                <ImageView
+                    android:src="@drawable/taxi"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:text="Taxi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Bajaj (ex Courier) -->
+            <LinearLayout
+                android:id="@+id/btnBajaj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="#0D47A1">
+                <ImageView
+                    android:src="@drawable/bajaj"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp" />
+                <TextView
+                    android:text="Bajaj"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Barre de navigation inférieure -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:background="#1E1E1E">
+
+        <LinearLayout
+            android:id="@+id/navAccueil"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView android:src="@drawable/ic_home"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Accueil"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navActivites"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView android:src="@drawable/ic_activities"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:text="Vos activités"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navCompte"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView android:src="@drawable/ic_account"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+
+            <TextView
+                android:text="Compte"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
